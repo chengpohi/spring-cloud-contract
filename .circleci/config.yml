@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: dockerfile/java:oracle-java8
+      - image: frolvlad/alpine-oraclejdk8:slim
     environment:
       _JAVA_OPTIONS: "-Xms512m -Xmx768m"
       GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx768m -XX:+HeapDumpOnOutOfMemoryError" -Dorg.gradle.daemon=false'
