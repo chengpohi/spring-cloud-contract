@@ -15,7 +15,7 @@ jobs:
     build:
       steps:
         - checkout
-         - restore_cache:
+        - restore_cache:
             key: sc-contract-{{ .Branch }}
         - run:
             name: "Download dependencies"
